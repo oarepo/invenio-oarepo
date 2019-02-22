@@ -61,6 +61,8 @@ install_requires = [
     'invenio-files-multisum-storage>=1.0.0',
     'invenio-acls>=1.0.0',
     'invenio-oarepo-files-rest>=1.0.0',
+    'invenio-openid-connect>=1.0.0',
+    'invenio-proxyidp>=1.0.0',
     'invenio-records-links>=1.0.0'
 ]
 
