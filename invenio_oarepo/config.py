@@ -68,7 +68,7 @@ THEME_FRONTPAGE = True
 #: Frontpage title.
 THEME_FRONTPAGE_TITLE = _('OARepo')
 #: Frontpage template.
-THEME_FRONTPAGE_TEMPLATE = 'oarepo/frontpage.html'
+THEME_FRONTPAGE_TEMPLATE = 'invenio_oarepo/frontpage.html'
 
 # Email configuration
 # ===================
