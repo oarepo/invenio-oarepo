@@ -56,7 +56,7 @@ install_requires = [
     'Flask-Debugtoolbar>=0.10.1',
     'invenio[{db},{es},base,auth,metadata]~={version}'.format(
         db=DATABASE, es=ELASTICSEARCH, version=INVENIO_VERSION),
-    'invenio-records-files==1.0.0a11'
+    'invenio-records-files==1.0.0a11',
     'invenio-files-rest==1.0.0a23',
     'invenio-files-multisum-storage>=1.0.0',
     'invenio-acls>=1.0.0',
