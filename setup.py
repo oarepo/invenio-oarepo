@@ -91,7 +91,7 @@ setup(
     platforms='any',
     entry_points={
         'console_scripts': [
-            'invenio_oarepo = invenio_app.cli:cli',
+            'oarepo = invenio_app.cli:cli',
         ],
         'invenio_base.blueprints': [
             'invenio_oarepo = invenio_oarepo.views:blueprint',
