@@ -7,6 +7,8 @@
 
 """Default configuration."""
 
+from __future__ import absolute_import, print_function
+
 """Default configuration for OARepo.
 
 You overwrite and set instance-specific configuration by either:
@@ -14,8 +16,6 @@ You overwrite and set instance-specific configuration by either:
 - Configuration file: ``<virtualenv prefix>/var/instance/invenio.cfg``
 - Environment variables: ``APP_<variable name>``
 """
-
-from __future__ import absolute_import, print_function
 
 from datetime import timedelta
 from functools import partialmethod

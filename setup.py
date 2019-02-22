@@ -91,19 +91,19 @@ setup(
     platforms='any',
     entry_points={
         'console_scripts': [
-            'oarepo = invenio_app.cli:cli',
+            'invenio_oarepo = invenio_app.cli:cli',
         ],
         'invenio_base.blueprints': [
-            'oarepo = oarepo.views:blueprint',
+            'invenio_oarepo = invenio_oarepo.views:blueprint',
         ],
         'invenio_base.apps': [
             'flask_debugtoolbar = flask_debugtoolbar:DebugToolbarExtension',
         ],
         'invenio_config.module': [
-            'oarepo = oarepo.config',
+            'invenio_oarepo = invenio_oarepo.config',
         ],
         'invenio_i18n.translations': [
-            'messages = oarepo',
+            'messages = invenio_oarepo',
         ],
     },
     extras_require=extras_require,
