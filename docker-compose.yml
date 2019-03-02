@@ -23,7 +23,7 @@ services:
     extends:
       file: docker-services.yml
       service: es
-  es_test:
-    extends:
-      file: docker-services.yml
-      service: es_test
+#  es_test:
+#    extends:
+#      file: docker-services.yml
+#      service: es_test

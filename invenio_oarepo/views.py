@@ -28,3 +28,4 @@ this file.
 def ping():
     """Load balancer ping view."""
     return 'OK'
+
