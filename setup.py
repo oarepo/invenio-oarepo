@@ -15,7 +15,7 @@ readme = open('README.rst').read()
 
 DATABASE = "postgresql"
 ELASTICSEARCH = "elasticsearch6"
-INVENIO_VERSION = "3.0.0"
+INVENIO_VERSION = "3.1.0"
 SEARCH_VERSION = '>=1.0.0'
 
 tests_require = [
