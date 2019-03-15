@@ -53,7 +53,7 @@ setup_requires = [
 
 install_requires = [
     'Flask-BabelEx>=0.9.3',
-    'Flask-Debugtoolbar>=0.10.1',
+    # 'Flask-Debugtoolbar>=0.10.1',
     'invenio[{db},{es},base,auth,metadata]~={version}'.format(
         db=DATABASE, es=ELASTICSEARCH, version=INVENIO_VERSION),
     'invenio-records-files==1.0.0a11',
@@ -96,9 +96,9 @@ setup(
         'invenio_base.blueprints': [
             'invenio_oarepo = invenio_oarepo.views:blueprint',
         ],
-        'invenio_base.apps': [
-            'flask_debugtoolbar = flask_debugtoolbar:DebugToolbarExtension',
-        ],
+        # 'invenio_base.apps': [
+        #     'flask_debugtoolbar = flask_debugtoolbar:DebugToolbarExtension',
+        # ],
         'invenio_config.module': [
             'invenio_oarepo = invenio_oarepo.config',
         ],
