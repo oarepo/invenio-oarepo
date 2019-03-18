@@ -8,14 +8,14 @@
  Invenio OARepo
 ================
 
-.. image:: https://img.shields.io/github/license/CESNET/invenio-oarepo.svg
-        :target: https://github.com/CESNET/invenio-oarepo/blob/master/LICENSE
+.. image:: https://img.shields.io/github/license/oarepo/invenio-oarepo.svg
+        :target: https://github.com/oarepo/invenio-oarepo/blob/master/LICENSE
 
-.. image:: https://img.shields.io/travis/CESNET/invenio-oarepo.svg
-        :target: https://travis-ci.org/CESNET/invenio-oarepo
+.. image:: https://img.shields.io/travis/oarepo/invenio-oarepo.svg
+        :target: https://travis-ci.org/oarepo/invenio-oarepo
 
-.. image:: https://img.shields.io/coveralls/CESNET/invenio-oarepo.svg
-        :target: https://coveralls.io/r/CESNET/invenio-oarepo
+.. image:: https://img.shields.io/coveralls/oarepo/invenio-oarepo.svg
+        :target: https://coveralls.io/r/oarepo/invenio-oarepo
 
 .. image:: https://img.shields.io/pypi/v/invenio-oarepo.svg
         :target: https://pypi.org/pypi/invenio-oarepo

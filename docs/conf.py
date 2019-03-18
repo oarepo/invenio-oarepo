@@ -124,7 +124,7 @@ html_theme_options = {
     'github_banner': True,
     'show_powered_by': False,
     'extra_nav_links': {
-        'invenio-oarepo@GitHub': 'https://github.com/CESNET/invenio-oarepo',
+        'invenio-oarepo@GitHub': 'https://github.com/oarepo/invenio-oarepo',
         'invenio-oarepo@PyPI': 'https://pypi.python.org/pypi/invenio-oarepo/',
     }
 }
