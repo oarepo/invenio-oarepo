@@ -32,7 +32,6 @@ tests_require = [
     'pytest-pep8>=1.0.6',
     'pytest>=2.8.0',
     'selenium>=3.4.3',
-    #'invenio-acls-tests>=1.0.0'
 ]
 
 extras_require = {
@@ -59,7 +58,7 @@ install_requires = [
     'invenio-records-files==1.0.0a11',
     'invenio-files-rest==1.0.0a23',
     'invenio-files-multisum-storage>=1.0.0',
-    'invenio-acls>=1.0.0',
+    'invenio-explicit-acls>=1.0.0',
     'invenio-oarepo-files-rest>=1.0.0',
     'invenio-openid-connect>=1.0.0',
     'invenio-cesnet-proxyidp>=1.0.0',
