@@ -62,7 +62,7 @@ install_requires = [
     'invenio-oarepo-files-rest>=1.0.0',
     'invenio-openid-connect>=1.0.0',
     'invenio-cesnet-proxyidp>=1.0.0',
-    'invenio-records-links>=1.0.0'
+    'invenio-records-links>=1.0.0',
 ]
 
 packages = find_packages()
