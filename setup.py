@@ -19,19 +19,6 @@ INVENIO_VERSION = "3.1.0"
 SEARCH_VERSION = '>=1.0.0'
 
 tests_require = [
-    'check-manifest>=0.25',
-    'coverage>=4.0',
-    'isort>=4.3.3',
-    'mock>=2.0.0',
-    'pydocstyle>=1.0.0',
-    'pytest-cache>=1.0',
-    'pytest-invenio>=1.0.2,<1.1.0',
-    'pytest-mock>=1.6.0',
-    'pytest-cov>=1.8.0',
-    'pytest-random-order>=0.5.4',
-    'pytest-pep8>=1.0.6',
-    'pytest>=2.8.0',
-    'selenium>=3.4.3',
 ]
 
 extras_require = {
@@ -39,11 +26,10 @@ extras_require = {
         'Sphinx>=1.5.1',
     ],
     'tests': tests_require,
+    'deploy': [
+        'this_is_just_a_library_install_oarepo_package_to_have_a_complete_repository_deployment>=1.0.0'
+    ]
 }
-
-extras_require['all'] = []
-for reqs in extras_require.values():
-    extras_require['all'].extend(reqs)
 
 setup_requires = [
     'Babel>=1.3',
@@ -53,17 +39,8 @@ setup_requires = [
 install_requires = [
     'Flask-BabelEx>=0.9.3',
     # 'Flask-Debugtoolbar>=0.10.1',
-    'invenio[{db},{es},base,auth,metadata]~={version}'.format(
-        db=DATABASE, es=ELASTICSEARCH, version=INVENIO_VERSION),
-    'invenio-records-files==1.0.0a11',
-    'invenio-files-rest==1.0.0a23',
-    'invenio-files-multisum-storage>=1.0.0',
-    'invenio-explicit-acls>=1.0.0',
-    'invenio-oarepo-files-rest>=1.0.0',
-    'invenio-openid-connect>=1.0.0',
-    # 'invenio-cesnet-proxyidp>=1.0.0',
-    'invenio-records-links>=1.0.0',
 ]
+
 
 packages = find_packages()
 
