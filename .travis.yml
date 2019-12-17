@@ -29,17 +29,20 @@ cache:
 
 env:
   global:
-    - ES6_DOWNLOAD_URL="https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-6.2.0.tar.gz"
+    - ES6_DOWNLOAD_URL="https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-6.8.1.tar.gz"
+    - ES7_DOWNLOAD_URL="https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-7.2.0-linux-x86_64.tar.gz"
     - ES_HOST=127.0.0.1
     - POSTGRESQL_SQLALCHEMY_DATABASE_URI="postgresql+psycopg2://postgres@localhost:5432/invenio"
     - MYSQL_SQLALCHEMY_DATABASE_URI="mysql://root@localhost/invenio"
   matrix:
-    - REQUIREMENTS=release EXTRAS=all,elasticsearch6,postgresql ES_URL=$ES6_DOWNLOAD_URL SQLALCHEMY_DATABASE_URI=$POSTGRESQL_SQLALCHEMY_DATABASE_URI
-    - REQUIREMENTS=release EXTRAS=all,elasticsearch6,sqlite ES_URL=$ES6_DOWNLOAD_URL
-    - REQUIREMENTS=release EXTRAS=all,elasticsearch6,mysql ES_URL=$ES6_DOWNLOAD_URL SQLALCHEMY_DATABASE_URI=$MYSQL_SQLALCHEMY_DATABASE_URI
+    - REQUIREMENTS=release EXTRAS=all,elasticsearch6,postgresql,tests ES_URL=$ES6_DOWNLOAD_URL SQLALCHEMY_DATABASE_URI=$POSTGRESQL_SQLALCHEMY_DATABASE_URI
+    - REQUIREMENTS=release EXTRAS=all,elasticsearch6,sqlite,tests ES_URL=$ES6_DOWNLOAD_URL
+    - REQUIREMENTS=release EXTRAS=all,elasticsearch7,postgresql,tests ES_URL=$ES7_DOWNLOAD_URL SQLALCHEMY_DATABASE_URI=$POSTGRESQL_SQLALCHEMY_DATABASE_URI
+    - REQUIREMENTS=release EXTRAS=all,elasticsearch7,sqlite,tests ES_URL=$ES7_DOWNLOAD_URL
 
 python:
-  - "3.6"
+  - "3.7"
+  - "3.8"
 
 before_install:
   - "mkdir /tmp/elasticsearch"
