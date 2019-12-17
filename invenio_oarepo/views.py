@@ -24,8 +24,8 @@ templates and static files located in the folders of the same names next to
 this file.
 """
 
+
 @blueprint.route('/ping', methods=['HEAD', 'GET'])
 def ping():
     """Load balancer ping view."""
     return 'OK'
-

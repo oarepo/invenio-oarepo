@@ -1,16 +1,16 @@
+# -*- coding: utf-8 -*-
+#
+# Copyright (C) 2019 CESNET.
+#
+# Invenio OARepo is free software; you can redistribute it and/or modify it
+# under the terms of the MIT License; see LICENSE file for more details.
+
+
+"""Open Access Repository for Invenio."""
+
 from flask import current_app
 from flask.globals import _request_ctx_stack
 
-#
-# Usage:
-#
-# In cli or in UI request:
-#
-#  with app.app_context():                  (already active in UI request)
-#     with current_api.app_context():
-#         print('api url inside current_api', url_for('api', _external=True))
-#
-#
 
 class CurrentApiApp:
     def app_context(self):
@@ -38,5 +38,17 @@ class CurrentApiAppContext:
 
 
 current_api = CurrentApiApp()
+"""
+
+Usage:
+
+In cli or in UI request:
+
+ with app.app_context():                  (already active in UI request)
+    with current_api.app_context():
+        print('api url inside current_api', url_for('api', _external=True))
+
+
+"""
 
 __all__ = ('current_api',)

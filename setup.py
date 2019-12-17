@@ -13,12 +13,17 @@ from setuptools import find_packages, setup
 
 readme = open('README.rst').read()
 
-DATABASE = "postgresql"
-ELASTICSEARCH = "elasticsearch6"
-INVENIO_VERSION = "3.1.0"
-SEARCH_VERSION = '>=1.0.0'
+INVENIO_VERSION=os.environ.get('INVENIO_VERSION', '3.1.1')
 
 tests_require = [
+    'check-manifest>=0.25',
+    'coverage>=4.0',
+    'isort>=4.3.3',
+    'pydocstyle>=2.0.0',
+    'pytest-cov>=2.5.1',
+    'pytest-pep8>=1.0.6',
+    'Sphinx>=1.5.1',
+    'invenio[base,auth,metadata,postgresql,elasticsearch6]~={0}'.format(INVENIO_VERSION),
 ]
 
 extras_require = {

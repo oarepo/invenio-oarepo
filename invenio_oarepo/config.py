@@ -9,6 +9,13 @@
 
 from __future__ import absolute_import, print_function
 
+import ssl
+from datetime import timedelta
+from functools import partialmethod
+
+import requests
+
+
 """Default configuration for OARepo.
 
 You overwrite and set instance-specific configuration by either:
@@ -17,13 +24,11 @@ You overwrite and set instance-specific configuration by either:
 - Environment variables: ``APP_<variable name>``
 """
 
-from datetime import timedelta
-from functools import partialmethod
-
 
 def _(x):
     """Identity function used to trigger string extraction."""
     return x
+
 
 # OAuth2.0 configuration
 # ======================
@@ -159,11 +164,8 @@ DEBUG_TB_INTERCEPT_REDIRECTS = False
 # JSONSCHEMAS_RESOLVE_SCHEMA = True
 JSONSCHEMAS_REPLACE_REFS = True
 
-
-import ssl
 ssl._create_default_https_context = ssl._create_unverified_context
 
-import requests
 requests.packages.urllib3.disable_warnings()
 
 session = requests.Session

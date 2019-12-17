@@ -63,14 +63,14 @@ script:
 after_success:
   - coveralls
 
-#deploy:
-#  provider: pypi
-#  user: TODO: PYPIUSERNAME
-#  password:
-#    secure: TODO: PYPISECUREHASH
-#  distributions: "compile_catalog sdist bdist_wheel"
-#  on:
-#    tags: true
-#    python: "3.6"
-#    repo: oarepo/invenio-oarepo
-#    condition: $DEPLOY = true
+
+deploy:
+  provider: pypi
+  user: "__token__"
+  password:
+    secure: "AWhOa2r5JSRsI79mo2dnHZAP5Ukq8wFl4DvN9CpvnDlvxSVoV3xcOPU3gn0Xb2Pt7wlH3sA9rWMrOix/iOwWwly2dWKgICL0t+Hm/thI/hKsw1rIHftgHxXIDCI2RVBIXMGBccJKr/XX+srPPNvgJDFJNJRnoSMeTF3wXVIydT61Fug39ixLECnfLBy686AoZBtCf42fHhq2kdsSs1B5mfNnnK6PJ5MKyqWYcYnTOr+nGYVK/GfYQ40Z7DimCHtxcMJKLCP7vHN/MYUxGMlB6DtROBUNSjg8TbW94EzUx3PSWjlqzLDtD3jRXNbQ2KRIxNpYZWiMKRrAThryzafWYf5yjg9aObnd+x3Dkmei65ykYDoRV4JuODFK/ifKDfA+aggPtalZ+ks8QDXJBQPH/B6+wImZ2WGt6+BzvEU5xMNm/f2hsQL5FtB+Dq+P0GOHonBJ5EMsRsqJNyDumsBxn1/p5vwm0auUYjWBWoDnb/vQShADlGjlQscXE+ev26wf8Wt1Wqi9EDQM23BV1aGSB68E4/SgecSxr43g2SUhVjtVgmtNdGJyWvNtLiofcX3gzz5/WiCryDh+OWPYk1jQYAQ8WqKQU26yZ7b+Mih+NsBDdLv5jMUfkiawrJ+tu50isywcSMGRfkkml5BBvOl4KvbEvbAVqO+iAORociHhGDc="
+  on:
+    tags: true
+  distributions: "sdist bdist_wheel"
+  skip_existing: true
+

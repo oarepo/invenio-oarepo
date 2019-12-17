@@ -6,7 +6,7 @@
 # under the terms of the MIT License; see LICENSE file for more details.
 
 
-"""Open Access Repository for Invenio"""
+"""Open Access Repository for Invenio."""
 
 from __future__ import absolute_import, print_function
 

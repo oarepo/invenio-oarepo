@@ -7,32 +7,8 @@
 API Docs
 ========
 
-Serializers
------------
-
-.. automodule:: invenio_oarepo.serializers
-   :members:
-
-Loaders
--------
-
-.. automodule:: invenio_oarepo.loaders
-   :members:
-
-Validation
-----------
-
-.. automodule:: invenio_oarepo.marshmallow
-   :members:
-
-Extension
+API
 ---------
 
-.. automodule:: invenio_oarepo.ext
-   :members:
-
-Views
------
-
-.. automodule:: invenio_oarepo.views
+.. automodule:: invenio_oarepo.current_api
    :members:

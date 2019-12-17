@@ -16,5 +16,23 @@
 include .dockerignore
 include .editorconfig
 include .tx/config
-prune docs/_build
-recursive-include invenio_oarepo *.po *.pot *.mo
+include *.rst
+recursive-include invenio_oarepo *.po *.pot *.mo *html *.gitkeep
+
+
+prune docs
+prune docker
+prune tests
+prune scripts
+prune .vscode
+
+exclude *.sh
+exclude *.txt
+exclude *.yml
+exclude docker*
+exclude Dockerfile
+exclude .coveragerc
+exclude LICENSE
+exclude babel.ini
+exclude pytest.ini
+exclude .licensevars
