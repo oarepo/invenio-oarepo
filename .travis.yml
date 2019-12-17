@@ -35,10 +35,10 @@ env:
     - POSTGRESQL_SQLALCHEMY_DATABASE_URI="postgresql+psycopg2://postgres@localhost:5432/invenio"
     - MYSQL_SQLALCHEMY_DATABASE_URI="mysql://root@localhost/invenio"
   matrix:
-    - REQUIREMENTS=release EXTRAS=all,elasticsearch6,postgresql ES_URL=$ES6_DOWNLOAD_URL SQLALCHEMY_DATABASE_URI=$POSTGRESQL_SQLALCHEMY_DATABASE_URI
-    - REQUIREMENTS=release EXTRAS=all,elasticsearch6,sqlite ES_URL=$ES6_DOWNLOAD_URL
-    - REQUIREMENTS=release EXTRAS=all,elasticsearch7,postgresql ES_URL=$ES7_DOWNLOAD_URL SQLALCHEMY_DATABASE_URI=$POSTGRESQL_SQLALCHEMY_DATABASE_URI
-    - REQUIREMENTS=release EXTRAS=all,elasticsearch7,sqlite ES_URL=$ES7_DOWNLOAD_URL
+    - REQUIREMENTS=release EXTRAS=all,elasticsearch6,postgresql,tests ES_URL=$ES6_DOWNLOAD_URL SQLALCHEMY_DATABASE_URI=$POSTGRESQL_SQLALCHEMY_DATABASE_URI
+    - REQUIREMENTS=release EXTRAS=all,elasticsearch6,sqlite,tests ES_URL=$ES6_DOWNLOAD_URL
+    - REQUIREMENTS=release EXTRAS=all,elasticsearch7,postgresql,tests ES_URL=$ES7_DOWNLOAD_URL SQLALCHEMY_DATABASE_URI=$POSTGRESQL_SQLALCHEMY_DATABASE_URI
+    - REQUIREMENTS=release EXTRAS=all,elasticsearch7,sqlite,tests ES_URL=$ES7_DOWNLOAD_URL
 
 python:
   - "3.7"
