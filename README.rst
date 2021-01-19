@@ -4,6 +4,11 @@
     Invenio OARepo is free software; you can redistribute it and/or modify it
     under the terms of the MIT License; see LICENSE file for more details.
 
+
+------
+WARNING: This repository is now DEPRECATED and will be deleted in the future
+------
+
 ================
  Invenio OARepo
 ================
